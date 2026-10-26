@@ -87,6 +87,32 @@
     color:var(--ink);
   }
 
+  /* ---------- botón de bitácora ---------- */
+  .logbook-btn{
+    margin-top:2rem;
+    display:inline-flex;
+    align-items:center;
+    gap:0.55rem;
+    background:var(--accent);
+    border:1px solid var(--accent);
+    color:var(--white);
+    font-family:'Jost', sans-serif;
+    font-size:0.8rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:0.7rem 1.4rem;
+    border-radius:var(--radius);
+    transition:background 0.2s, color 0.2s;
+  }
+  .logbook-btn:hover,
+  .logbook-btn:focus-visible{
+    background:none;
+    color:var(--accent);
+  }
+  .logbook-btn:focus-visible{ outline:2px solid var(--accent-2); outline-offset:2px; }
+  .logbook-btn svg{ width:16px; height:16px; flex-shrink:0; }
+
   /* ---------- piano illustration ---------- */
   .piano-wrap{
     margin:3.2rem auto 0;
@@ -288,6 +314,10 @@
       <rect x="544.71" y="10" width="24.86" height="93.00" rx="1.5" class="bkey"/>
     </svg>
   </div>
+  <a class="logbook-btn" href="https://rodrigozamorapiano.github.io/bitacorapiano/" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+    Bitácora de piano
+  </a>
 </header>
 
 <section id="repertorio">
@@ -341,17 +371,6 @@
     </article>
 
     <article class="piece">
-      <span class="marking">Andante leggiero</span>
-      <h3>Ambre</h3>
-      <span class="composer">Niels Frahm · arr. Dimitri Kindle</span>
-      <span class="meta">Mib mayor · 3/4</span>
-      <a class="open-btn" href="Ambre.pdf" download>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        Descargar partitura
-      </a>
-    </article>
-
-    <article class="piece">
       <span class="marking">BWV Anh. 126</span>
       <h3>Musette</h3>
       <span class="composer">Johann Sebastian Bach</span>
@@ -378,6 +397,17 @@
       <a class="open-btn" href="https://www.youtube.com/watch?v=MPWaU1VPxMQ" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
         Ver video
+      </a>
+    </article>
+
+    <article class="piece">
+      <span class="marking">Preludio No. 1</span>
+      <h3>Preludio en Do mayor, BWV 846</h3>
+      <span class="composer">Johann Sebastian Bach</span>
+      <span class="meta">Do mayor · 4/4 · El Clave Bien Temperado, Libro I</span>
+      <a class="open-btn" href="Bach-Prelude_in_C_major_BWV_846-piano.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Descargar partitura
       </a>
     </article>
 
