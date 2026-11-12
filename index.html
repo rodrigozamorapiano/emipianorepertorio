@@ -112,6 +112,23 @@
   }
   .logbook-btn:focus-visible{ outline:2px solid var(--accent-2); outline-offset:2px; }
   .logbook-btn svg{ width:16px; height:16px; flex-shrink:0; }
+  .hero-actions{
+    margin-top:2rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:0.8rem;
+  }
+  .hero-actions .logbook-btn{ margin-top:0; }
+  .logbook-btn.alt{
+    background:none;
+    color:var(--accent);
+  }
+  .logbook-btn.alt:hover,
+  .logbook-btn.alt:focus-visible{
+    background:var(--accent);
+    color:var(--white);
+  }
 
   /* ---------- piano illustration ---------- */
   .piano-wrap{
@@ -314,10 +331,16 @@
       <rect x="544.71" y="10" width="24.86" height="93.00" rx="1.5" class="bkey"/>
     </svg>
   </div>
+  <div class="hero-actions">
   <a class="logbook-btn" href="https://rodrigozamorapiano.github.io/bitacorapiano/" target="_blank" rel="noopener">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-    Bitácora de piano
-  </a>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      Bitácora de piano
+    </a>
+    <a class="logbook-btn alt" href="https://rodrigozamorapiano.github.io/compas/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      Curso Compás
+    </a>
+  </div>
 </header>
 
 <section id="repertorio">
